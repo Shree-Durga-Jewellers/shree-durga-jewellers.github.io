@@ -26,6 +26,34 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -51,13 +79,13 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="jewellery.html">Jewellery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact us</a>
@@ -66,7 +94,6 @@
                   <a class="nav-link" href="#">Login</a>
                 </li>
               </ul>
-
             </div>
             <div class="quote_btn-container ">
               <a href="">
@@ -84,6 +111,34 @@
       </div>
     </header>
     <!-- end header section -->
+
+    <!-- Carousel section -->
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img-box">
+              <img src="images/slider-img.png" alt="">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="img-box">
+              <img src="images/about-img.png" alt="">
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="img-box">
+              <img src="images/ring-img.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -100,13 +155,15 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Our Shop: 
+                About The Shop: 
               </h2>
             </div>
             <p>
-              Shree Durga Jewellers in Durg is one of the leading businesses in the Diamond Jewellery Showrooms. 
-              Also known for Jewellery Showrooms, Gold Jewellery Showrooms, Diamond Jewellery Showrooms, Silver Jewellery Showrooms, Precious Stone Jewellery Showrooms, Fashion Jewellery Showrooms, Second Hand Silver Jewellery Buyers, Kundan Jewellery Showrooms and much more. 
-              Find Address, Contact Number, Reviews & Ratings, Photos, Maps of Shree Durga Jewellers, Durg.
+              Established in 1968, Shree Durga Jewellers, was started in Power House Camp-II, Bhilai by Mr. Mahavir Prasad Verma.
+              <br>
+              With over 50+ years in the business the organisation has established a strong foothold in the Industry.
+              <br>
+              Thier Moto of believing in customer satisfaction while maintaining the highest quality of the product comes to the utmost importance to them.
             </p>
           </div>
           <div class="detail-box">
@@ -116,11 +173,54 @@
               </h2>
             </div>
             <p>
-              Shree Durga Jewellers in Power House has a wide range of products and / or services to cater to the varied requirements of their customers. 
-              The staff at this establishment are courteous and prompt at providing any assistance. 
-              They readily answer any queries or questions that you may have. 
-              Pay for the product or service with ease by using any of the available modes of payment, such as Cash, Credit Card, UPI, BHIM, Paytm, Visa Card, Master Card, G Pay, Amazon Pay, PhonePe, NEFT, RTGS, Cash on Delivery, Cheque, Debit Card, JD Pay, Airtel Money, RuPay Card, IMPS, Demand Draft. 
-              This establishment is functional from 10:00 - 20:30 (Tueday - Sunday) & 12:00 - 19:00 (Monday).
+              Shree Durga Jewellers is one of the leading business in Gold, Silver and Diamond jewellery.
+              <br>
+              We is also known for its precious stone collection, fashion and latest and the most trending jewellery designs, fancy jewellery, Immitation jewellery, Kundan Jewellery, Silver Utensils, etc.
+              <br>
+              We also has a wide range of South Indian jewellery and apart from the ready made jewellery, It also provides the service of custom making jewellery in either Gold or Silver with high precision and maintaining the highest quality.
+              <br>
+              Every jewellery either from the collection or custom made is ensured to be with a HallMark, HUID marked and with proper certificates and bills accordingly.
+              <br><br>
+              The staff at the establishment are courteous and prompt at providing any assistance. They are also readily available to answer any queries or questions you may have.
+            </p>
+          </div>
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Working Hours and Payment Modes: 
+              </h2>
+            </div>
+            <p>
+              The Working hours of Shree Durga Jewellers are:
+              <div class="row">
+                <div class="column">
+                  <ul>
+                    <li>Tuesday : </li>
+                    <li>Wednesday : </li>
+                    <li>Thursday : </li>
+                    <li>Friday : </li>
+                    <li>Saturday : </li>
+                    <li>Sunday : </li>
+                    <li>Monday : </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  10:00 AM - 9:30 PM <br>
+                  10:00 AM - 9:30 PM <br>
+                  10:00 AM - 9:30 PM <br>
+                  10:00 AM - 9:30 PM <br>
+                  10:00 AM - 9:30 PM <br>
+                  10:00 AM - 9:30 PM <br>
+                  12:00 PM - 7:00 PM <br>
+                </div>
+              </div>
+              Accepted Payment modes are:
+              <br>
+              <div class="row" style="column-count: 3;">
+                <div class="column"><img src="images/cash.png" alt=""> <br>Cash</div>
+                <div class="column"><img src="images/credit_card.png" alt=""> <br>Debit / Credit Card</div>
+                <div class="column"><img src="images/UPI.png" alt=""> <br>UPI / Other contactless mode of payments</div>
+              </div>
             </p>
           </div>
           <div class="detail-box">
